@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #e1328f;
+    --secondary-color: #842d78;
+    --primary-font: 'League Spartan', sans-serif;
+}
+
+
+
+.padding-section {
+    padding: 100px 0px 30px 0px;
+}
+
+.text-theme {
+    color: var(--primary-color);
+}
+
+.bg-theme {
+    background-color: var(--primary-color);
+}
+
+.bg-theme-light {
+    background-color: #e1328fa1;
+}
+
+.bg-theme2-light {
+    background-color: #842d7876;
+}
+
+
+
+.bg-theme2 {
+    background: var(--secondary-color);
+}
+
+
+figure.image-box-img {
+    position: relative;
+}
+
+figure.image-box-img img {
+    margin: 0 auto !important;
+}
+
+figure.image-box-img:after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    z-index: -1;
+    top: 40px;
+    right: 40px;
+    background-color: #e1328f24;
+}
+
+
+section .sub-title {
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: .6px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    padding: 3px 23px 3px 23px;
+    border-radius: 30px;
+    background-color: #e1328f24;
+    margin-bottom: 20px;
+}
+
+
+section .main-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+
+}
+
+.hhc-testimonial-btn {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    background: var(--primary-color);
+    top: 0;
+    height: 40px;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px;
+    text-align: center;
+}
+
+.hhc-testimonial-btn i {
+    top: 8px;
+    position: relative;
+    font-size: 15px;
+}
+
+.single-service .hhc-service-style-2 .hhc-service-btn{
+    border: 1px solid #000 !important;
+    color: #842d78 !important;
+    bottom: 5px  !important;
+    right: 6px  !important;
+    width: 30px  !important;
+    height: 30px  !important;
+}
+
+.single-service .hhc-service-style-2 .hhc-service-btn:hover{
+    color: #fff !important;
+}
+
+
+#appointment .form-control{
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+#appointment .form-control:focus{
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0; 
+    box-shadow: 0 0 0 .25rem rgb(255 255 255 / 25%) !important;
+
+}
