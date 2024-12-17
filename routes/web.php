@@ -4,6 +4,7 @@ use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogPostController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\FrontendController;
@@ -11,7 +12,8 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
-
+use Vormkracht10\Analytics\Facades\Analytics;
+use Vormkracht10\Analytics\Period;
 
 Route::group(['as' => 'public.', 'namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
@@ -36,10 +38,13 @@ Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => ['auth:web'],'prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Controllers'], function () {
-    Route::get('dashboard', function () {
-        return view('admin.dashboard.index');
-    })->name('dashboard');
+    // Route::get('dashboard', function () {
+    //     // $averageSessionDuration = Analytics::averageSessionDuration(Period::days(7));
 
+    //     // dd($averageSessionDuration);
+    //     return view('admin.dashboard.index');
+    // })->name('dashboard');
+    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
     Route::resource('doctors', DoctorController::class)->names('doctors');
     Route::resource('services', ServiceController::class)->names('services');
     Route::resource('banners', BannerController::class)->names('banners');
@@ -51,7 +56,9 @@ Route::group(['middleware' => ['auth:web'],'prefix' => 'admin', 'as' => 'admin.'
     Route::resource('profile', GalleryController::class)->names('profile');
     Route::resource('blogs', BlogPostController::class)->names('blogs');
     Route::resource('blog-category', BlogCategoryController::class)->names('blogs-category');
-    
+
+    Route::get('appointments/{id}', 'AppointmentController@appointmentShow');
+    Route::post('appointments/{id}', 'AppointmentController@appointmentUpdate')->name('appointments.update');
 });
 
 

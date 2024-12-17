@@ -25,7 +25,7 @@
 
       <div class="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
           <!-- Sidebar Menu -->
-          <nav class="mt-5 px-4  lg:px-6" x-data="{ selected: $persist('Dashboard') }">
+          <nav class="mt-5 px-4  lg:px-6" x-data="{ selected: $persist('Dashboard'), page: 'dashboard' }">
               <!-- Menu Group -->
               <div>
                   <h3 class="mb-4 ml-4 text-sm font-medium text-bodydark2">MENU</h3>
@@ -36,7 +36,7 @@
                           <a class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                               href="{{ route('admin.dashboard') }}"
                               @click="selected = (selected === 'Dashboard' ? '':'Dashboard')"
-                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Dashboard') && (page === 'dashboard') }">
+                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Dashboard') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -61,7 +61,7 @@
                           <a class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                               href="{{ route('admin.doctors.index') }}"
                               @click="selected = (selected === 'Doctors' ? '':'Doctors')"
-                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Doctors') && (page === 'Doctors') }">
+                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Doctors') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -77,7 +77,7 @@
                           <a class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                               href="{{ route('admin.services.index') }}"
                               @click="selected = (selected === 'Services' ? '':'Services')"
-                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Services') && (page === 'Services') }">
+                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Services') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -93,7 +93,7 @@
                           <a class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                               href="{{ route('admin.banners.index') }}"
                               @click="selected = (selected === 'Banners' ? '':'Banners')"
-                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Banners') && (page === 'Banners') }">
+                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Banners') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -109,7 +109,7 @@
                           <a class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                               href="{{ route('admin.packages.index') }}"
                               @click="selected = (selected === 'Packages' ? '':'Packages')"
-                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Packages') && (page === 'Packages') }">
+                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Packages') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -125,7 +125,7 @@
                           <a class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                               href="{{ route('admin.appoinments.index') }}"
                               @click="selected = (selected === 'Appoinments' ? '':'Appoinments')"
-                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Appoinments') && (page === 'Appoinments') }">
+                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Appoinments') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -140,7 +140,7 @@
                           <a class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
                               href="{{ route('admin.enquiry.index') }}"
                               @click="selected = (selected === 'Enquiry' ? '':'Enquiry')"
-                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Enquiry') && (page === 'Enquiry') }">
+                              :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Enquiry') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18"
                                   fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -158,9 +158,7 @@
                               href="{{ route('admin.gallery.index') }}"
                               @click="selected = (selected === 'Gallery' ? '':'Gallery')"
                               :class="{
-                                  'bg-graydark dark:bg-meta-4': (selected === 'Gallery') && (
-                                      page === 'Gallery')
-                              }">
+                                  'bg-graydark dark:bg-meta-4': (selected === 'Gallery') }">
                               <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18"
                                   fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -226,13 +224,13 @@
                                   <li>
                                       <a class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                                           href="{{ route('admin.blogs-category.index') }}"
-                                          :class="page === 'list' && '!text-white'">Category
+                                          :class="page === 'blog-category' && '!text-white'">Category
                                       </a>
                                   </li>
                                   <li>
                                       <a class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                                           href="{{ route('admin.blogs.index') }}"
-                                          :class="page === 'kanban' && '!text-white'">Post</a>
+                                          :class="page === 'blogs' && '!text-white'">Post</a>
                                   </li>
                               </ul>
                           </div>

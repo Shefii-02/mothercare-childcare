@@ -14,6 +14,9 @@ class EnquiryController extends Controller
     public function index()
     {
         //
+        $enquirys = Enquiry::orderBy('status', 'desc')->get();
+
+        return view('admin.contacts.index',compact('enquirys'));
     }
 
     /**
@@ -35,9 +38,11 @@ class EnquiryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Enquiry $enquiry)
+    public function show($id)
     {
         //
+        $consult = Enquiry::findOrFail($id);
+        return view('admin.contacts.modal-content', compact('consult'));
     }
 
     /**
@@ -51,9 +56,15 @@ class EnquiryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateEnquiryRequest $request, Enquiry $enquiry)
+    public function update(UpdateEnquiryRequest $request,$id)
     {
         //
+        $status = $request->only('status');
+        $appointment = Enquiry::findOrFail($id);
+        $appointment->status = intval($status);
+        $appointment->save();
+
+        return redirect()->route('admin.contact.index')->with('success', 'Consult updated successfully!');
     }
 
     /**

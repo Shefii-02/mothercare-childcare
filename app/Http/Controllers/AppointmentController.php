@@ -14,6 +14,8 @@ class AppointmentController extends Controller
     public function index()
     {
         //
+        $appointments = Appointment::orderby('status','asc')->get();
+        return view('admin.appointment.index', compact('appointments'));
     }
 
     /**
@@ -35,8 +37,10 @@ class AppointmentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Appointment $appointment)
+    public function appointmentShow($id)
     {
+        $appointment = Appointment::findOrFail($id);
+        return view('admin.appointment.modal-content', compact('appointment'));
         //
     }
 
@@ -51,9 +55,15 @@ class AppointmentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateAppointmentRequest $request, Appointment $appointment)
+    public function appointmentUpdate(UpdateAppointmentRequest $request,$id)
     {
         //
+        $status = $request->only('status');
+        $appointment = Appointment::findOrFail($id);
+        $appointment->status = intval($status);
+        $appointment->save();
+
+        return redirect()->route('admin.appoinments.index')->with('success', 'Status updated successfully!');
     }
 
     /**
