@@ -194,8 +194,8 @@
 
                             @yield('content')
                         </main>
-                        <footer id="colophon"
-                            class="hhc-footer-section site-footer hhc-footer-style-2 hhc-text-color-blackish hhc-bg-color-white hhc-bg-image-yes hhc-footer-menu-yes hhc-footer-widget-yes">
+                        <footer id="colophon" style="margin:15px;border-radius:25px;"
+                            class="hhc-footer-section site-footer hhc-footer-style-2 hhc-text-color-blackish  bg-theme2 hhc-bg-image-yes hhc-footer-menu-yes hhc-footer-widget-yes">
                             <div class="hhc-footer-section hhc-footer-big-area-wrapper hhc-bg-color-transparent">
                                 <div class="footer-wrap hhc-footer-big-area">
                                     <div class="container">
@@ -203,10 +203,10 @@
                                             <div class="col-xl-4 col-sm-12 hhc-footer-left">
                                             </div>
                                             <div class="col-xl-8 col-sm-12 hhc-footer-right">
-                                                <h2 class="text-theme">
+                                                <h2 class="text-light">
                                                     Hayth Mother Care and Childs in India | UAE
                                                 </h2>
-                                                <span class="fs-5 fw-bold text-secondary">
+                                                <span class="fs-5 fw-bold text-light">
                                                     Best Mother Care and Child Care Hospital in India
                                                 </span>
                                             </div>
@@ -228,22 +228,22 @@
                                                         <li class="hhc-social-li hhc-social-facebook "><a
                                                                 title="Facebook" href="https://www.facebook.com"
                                                                 target="_blank"><span>
-                                                                    <i class="bi bi-facebook"></i></span></a>
+                                                                    <i class="bi bi-facebook text-light"></i></span></a>
                                                         </li>
                                                         <li class="hhc-social-li hhc-social-linkedin ">
                                                             <a title="LinkedIn" href="#."
                                                                 target="_blank"><span><i
-                                                                        class="bi bi-linkedin"></i></span></a>
+                                                                        class="bi bi-linkedin text-light"></i></span></a>
                                                         </li>
                                                         <li class="hhc-social-li hhc-social-instagram "><a
                                                                 title="Instagram" href="https://www.instagram.com"
                                                                 target="_blank"><span><i
-                                                                        class="bi bi-instagram"></i></span></a>
+                                                                        class="bi bi-instagram text-light"></i></span></a>
                                                         </li>
                                                         <li class="hhc-social-li hhc-social-youtube "><a
                                                                 title="Youtube" href="https://www.youtube.com/"
                                                                 target="_blank"><span><i
-                                                                        class="bi bi-youtube"></i></span></a>
+                                                                        class="bi bi-youtube text-light"></i></span></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -251,20 +251,20 @@
                                         </div>
                                         <div class="hhc-footer-widget hhc-footer-widget-col-2 col-md-6 col-lg-3">
                                             <aside id="nav_menu-1" class="widget widget_nav_menu">
-                                                <h2 class="widget-title">Useful Link</h2>
+                                                <h2 class="widget-title text-dark fw-bold">Useful Link</h2>
                                                 <div class="menu-useful-link-container">
                                                     <ul id="menu-useful-link" class="menu">
                                                         <li
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-572">
-                                                            <a href="{{ route('public.services') }}">Services</a>
+                                                            <a  class="text-light" href="{{ route('public.services') }}">Services</a>
                                                         </li>
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570">
-                                                            <a href="{{ route('public.packages') }}">Packages</a>
+                                                            <a  class="text-light" href="{{ route('public.packages') }}">Packages</a>
                                                         </li>
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570">
-                                                            <a href="{{ route('public.doctors') }}">Doctors</a>
+                                                            <a  class="text-light" href="{{ route('public.doctors') }}">Doctors</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -272,15 +272,15 @@
                                         </div>
                                         <div class="hhc-footer-widget hhc-footer-widget-col-3 col-md-6 col-lg-3">
                                             <aside id="custom_html-2" class="widget_text widget widget_custom_html">
-                                                <h2 class="widget-title">Working Time</h2>
+                                                <h2 class="widget-title text-dark fw-bold">Working Time</h2>
                                                 <div class="textwidget custom-html-widget">
                                                     <div class="hhc-timelist-ele-wrapper ">
                                                         <div class="hhc-timelist-wrapper">
                                                             <ul class="hhc-timelist-list">
-                                                                <li><span class="hhc-timelist-li-title">Mon - Sun:
+                                                                <li><span class="hhc-timelist-li-title text-light">Mon - Sun:
                                                                         8.00am -
                                                                         9.00pm</span></li>
-                                                                <li><span class="hhc-timelist-li-title">24 hrs
+                                                                <li><span class="hhc-timelist-li-title text-light">24 hrs
                                                                         Emergency
                                                                         services
                                                                         available</span></li>
@@ -293,9 +293,9 @@
                                         <div class="hhc-footer-widget hhc-footer-widget-col-4 col-md-6 col-lg-3">
                                             <aside id="pbm_addons_contact_widget-1"
                                                 class="widget pbm_addons_contact_widget">
-                                                <h2 class="widget-title">Our address</h2>
+                                                <h2 class="widget-title text-dark fw-bold">Our address</h2>
                                                 <div class="hhc-contact-widget-lines">
-                                                    <div class="hhc-contact-widget-line hhc-contact-widget-address">
+                                                    <div class="hhc-contact-widget-line hhc-contact-widget-address text-light">
                                                         Hayath Mother & Child Care LLP<br>
                                                         Tirur - Kuttippuram Rd, Kavumopuram, Kuttippuram, Kerala 679571.
                                                     </div>
@@ -312,9 +312,8 @@
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="hhc-footer-copyright-text-area"> © Hayth Mother Care and
-                                                    Childs.
-                                                    Powered by <a href="https://haythhealthcare.com/"
-                                                        target="_blank">Hayath Health Care</a>
+                                                    Childs. Powered by <a href="https://haymedhealthcare.com/"
+                                                        target="_blank">Haymed Health Care</a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -395,7 +394,7 @@
             "timeOut": "5000", // Timeout duration
             "extendedTimeOut": "5000",
         };
-console.log(`{{ session('success_msg') }}`)
+
         @if (session('success_msg'))
             toastr.success("{{ session('success_msg') }}", "Success");
         @elseif (session('failed_msg'))

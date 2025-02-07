@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
-    <link href="{{ asset('admin/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/style.css') }}" rel="stylesheet">
 
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -51,7 +51,7 @@ $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(valu
     </div>
 
 
-    <script defer src="{{ asset('admin/bundle.js') }}"></script>
+    <script defer src="{{ asset('assets/admin/bundle.js') }}"></script>
     <script src="https://cdn.tiny.cloud/1/egk3pv0g39y6uwv2sqomir21e7x8okqvr2cvt13d4pngampx/tinymce/7/tinymce.min.js"
         referrerpolicy="origin"></script>
 

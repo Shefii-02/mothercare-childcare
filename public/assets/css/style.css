@@ -11208,7 +11208,7 @@ table tbody td {
 }
 
 .site-title img {
-    max-height: 50px;
+    max-height: 85px;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease
 }
@@ -23412,7 +23412,7 @@ button[data-balloon] {
 
 .site-footer,
 .site-footer.hhc-bg-color-custom:before {
-    background-image: url(/assets/images/icons/hayath-icon-footer.webp);
+    background-image: url(/assets/images/icons/hayath-icon-footer.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: auto;
@@ -33942,7 +33942,7 @@ h1.entry-title {
     }
 
     .site-title img.hhc-main-logo {
-        max-height: 45px
+        max-height: 65px
     }
 
     h1.site-title {
