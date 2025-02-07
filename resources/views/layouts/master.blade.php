@@ -41,7 +41,7 @@
                                                     <span class="site-title-text">Hayath
                                                         Mother and Child Care </span>
                                                     <img class="w-100"
-                                                        src="{{ asset('assets/images/icons/hayath-logo.webp') }}"
+                                                        src="{{ asset('assets/images/icons/hayath-logo.webp?v=1') }}"
                                                         width="800" height="316" class="hhc-main-logo"
                                                         alt="Hayth Mother and Child Care "
                                                         title="Hayth Mother and Child Care " />
@@ -221,7 +221,7 @@
                                             <aside id="text-5" class="widget widget_text">
                                                 <div class="textwidget">
                                                     <div class="hhc-footer-logo">
-                                                        <img src="{{ asset('assets/images/icons/hayath-logo.webp') }}"
+                                                        <img src="{{ asset('assets/images/icons/hayath-logo.webp?v=1') }}"
                                                             class=" h-50 mb-4 bg-white rounded-2 w-75">
                                                     </div>
                                                     <ul class="hhc-social-links">
