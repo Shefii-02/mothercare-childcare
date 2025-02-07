@@ -222,7 +222,7 @@
                                                 <div class="textwidget">
                                                     <div class="hhc-footer-logo">
                                                         <img src="{{ asset('assets/images/icons/hayath-logo.webp') }}"
-                                                            class="w-50 h-50 mb-4">
+                                                            class=" h-50 mb-4 bg-white rounded-2 w-75">
                                                     </div>
                                                     <ul class="hhc-social-links">
                                                         <li class="hhc-social-li hhc-social-facebook "><a
