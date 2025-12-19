@@ -81,7 +81,7 @@
             <div class="col-lg-12 pt-5">
                 <div class="row ">
                     <div class="col-lg-6 position-relative mb-3">
-                        <img src="{{ asset('assets/images/about-04.jpg') }}" class="rounded w-100" />
+                        <img src="{{ asset('assets/images/about-04.jpg') }}" style="object-fit: cover; -webkit-mask-image: url(/assets/images/bg/brushMask.webp); mask-image: url(/assets/images/bg/brushMask.webp); mask-repeat: no-repeat; mask-size: contain;  mask-position: center;" class="rounded w-100" />
                         {{-- <h2 class="text-theme fs-4 mt-4 mb-3 fw-bold">Spacious and Private Suites</h2>
                         <p>
                             Indulge in the spaciousness of our private suites, where you can relish the joy of mother hood
@@ -126,7 +126,7 @@
                         </p>
                     </div>
                     <div class="col-lg-6 mb-3">
-                        <img src="{{ asset('assets/images/about-05.jpg') }}" class="rounded w-100" />
+                        <img src="{{ asset('assets/images/about-05.jpg') }}" style="object-fit: cover; -webkit-mask-image: url(/assets/images/bg/brushMask.webp); mask-image: url(/assets/images/bg/brushMask.webp); mask-repeat: no-repeat; mask-size: contain;  mask-position: center;" class="rounded w-100" />
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                         <h2 class="fs-1 text-muted my-1 fw-bold">"INVEST IN THE FUTURE OF HEALTHCARE"</h2>
                     </div>
                     <div class="col-lg-8 position-relative text-center">
-                        <img src="{{ asset('assets/images/about-03.jpg') }}" class="rounded w-100" />
+                        <img src="{{ asset('assets/images/about-03.jpg') }}" style="object-fit: cover; -webkit-mask-image: url(/assets/images/bg/brushMask.webp); mask-image: url(/assets/images/bg/brushMask.webp); mask-repeat: no-repeat; mask-size: contain;  mask-position: center;" class="rounded w-100" />
                         <p class="mt-3">
                             Hayath Mother and Child Care is more than just a healthcare
                             provider; it is a symbol of health, empowerment, and holistic
