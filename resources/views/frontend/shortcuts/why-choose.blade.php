@@ -18,8 +18,7 @@
                         </figure>
                         <div class="image-box-content">
                             <h3 class="image-box-title">
-                                Pregnancy Classes for
-                                Moms-to-be</h3>
+                               Rooftop Garden</h3>
                         </div>
                     </div>
                 </div>
@@ -30,8 +29,7 @@
                         </figure>
                         <div class="image-box-content">
                             <h3 class="image-box-title">
-                                Pregnancy Classes for
-                                Moms-to-be</h3>
+                                Exclusive Resto-Cafe</h3>
                         </div>
                     </div>
                 </div>
@@ -42,8 +40,7 @@
                         </figure>
                         <div class="image-box-content">
                             <h3 class="image-box-title">
-                                Pregnancy Classes for
-                                Moms-to-be</h3>
+                                Hyper pharmacy & Mom’s Baystore</h3>
                         </div>
                     </div>
                 </div>
@@ -54,8 +51,7 @@
                         </figure>
                         <div class="image-box-content">
                             <h3 class="image-box-title">
-                                Pregnancy Classes for
-                                Moms-to-be</h3>
+                                Luxury Private Suites</h3>
                         </div>
                     </div>
                 </div>
@@ -66,13 +62,23 @@
                         </figure>
                         <div class="image-box-content">
                             <h3 class="image-box-title">
-                                Pregnancy Classes for
-                                Moms-to-be</h3>
+                                IVF & Fertility services</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-6">
+                    <div class="image-box-wrapper">
+                        <figure class="image-box-img">
+                            <img src="/assets/images/icons/icon-6.png" alt="" />
+                        </figure>
+                        <div class="image-box-content">
+                            <h3 class="image-box-title">
+                               Postnatal Care (Mother & New born)</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-       
+
     </div>
 </section>

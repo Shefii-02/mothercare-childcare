@@ -126,8 +126,8 @@
                                         aria-labelledby="offcanvasExampleLabel">
                                         <div class="offcanvas-header">
                                             <a class="nav-link  text-dark btn"
-                                                href="tel:+919145621716">
-                                                <i class="bi bi-telephone"></i> +91 9145621716
+                                                href="tel:+918089111286">
+                                                <i class="bi bi-telephone"></i> +91 8089 111 286
                                             </a>
                                             <button type="button" class="btn-close text-reset"
                                                 data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -173,7 +173,7 @@
                                                     <a class="nav-link  text-dark {{ request()->routeIs('public.contact') ? 'active' : '' }}"
                                                         href="{{ route('public.contact') }}">Contact Us</a>
                                                 </li>
-                                                
+
                                             </ul>
                                         </div>
                                     </div>
@@ -204,10 +204,9 @@
                                             </div>
                                             <div class="col-xl-8 col-sm-12 hhc-footer-right">
                                                 <h2 class="text-light">
-                                                    Hayth Mother Care and Childs in India | UAE
+                                                   Hayath Mother and Child Care LLP
                                                 </h2>
                                                 <span class="fs-5 fw-bold text-light">
-                                                    Best Mother Care and Child Care Hospital in India
                                                 </span>
                                             </div>
                                         </div>
