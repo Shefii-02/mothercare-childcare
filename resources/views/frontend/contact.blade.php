@@ -47,14 +47,14 @@
                                                     <h2 class="text-light fw-bold">Mail us 24/7</h2>
                                                 </div>
                                                 <div class="mt-4">
-                                                    <a href="mailto:marketing@gmail.com"
-                                                        class="text-decoration-none text-light">marketing@gmail.com</a>
+                                                    <a href="mailto:hayathmotherandchildcare@gmail.com"
+                                                        class="text-decoration-none text-light">hayathmotherandchildcare@gmail.com</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="hhc-team-btn">
-                                        <a class="hhc-team-text" href="mailto:marketing@gmail.com">
+                                        <a class="hhc-team-text" href="mailto:hayathmotherandchildcare@gmail.com">
                                             <i class="bi bi-arrow-up-right"></i>
                                         </a>
                                     </div>
@@ -77,11 +77,8 @@
                                                     <h2 class="text-light fw-bold">Call us 24/7</h2>
                                                 </div>
                                                 <div class="bottom-0 mt-4">
-                                                    <a href="tel:9102012344546"
-                                                        class="text-decoration-none text-light">Phone : +91 020
-                                                        12344546</a><br>
-                                                    <a href="tel:+91435345345"
-                                                        class="text-decoration-none text-light">Mobile : +91 91435345345</a>
+                                                    <a href="tel:+918089111286"
+                                                        class="text-decoration-none text-light">Mobile : +91 8089 111 286</a>
                                                 </div>
                                             </div>
                                         </div>
