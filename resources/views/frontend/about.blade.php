@@ -70,7 +70,7 @@
             <div class="col-lg-12 pt-5">
                 <div class="row justify-center">
                     <div class="col-lg-8 position-relative text-center">
-                        <img src="{{ asset('assets/images/about-02.jpg') }}" class="rounded w-100" />
+                        <img src="{{ asset('assets/images/about-02.jpg?v=1') }}" class="rounded w-100" />
                         <h2 class="text-theme fs-4 mt-4 mb-3 fw-bold">WORLD-CLASS FACILITIES FOR YOUR CARE</h2>
                         <p class="mt-3">Indulge in the spaciousness of our private suites, where you can relish the joy of
                             motherhood in complete comfort. The rooms are
