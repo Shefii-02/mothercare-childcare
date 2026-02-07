@@ -31,7 +31,7 @@
                 <div class="hhc-header-height-wrapper" style="min-height:90px;">
                     <div
                         class="hhc-main-header-area hhc-sticky-logo-yes hhc-responsive-logo-no hhc-responsive-header-bgcolor-white hhc-header-wrapper hhc-bg-color-white">
-                        <div class="container">
+                        <div class="container-fluid px-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="hhc-logo">
                                     <div class="site-branding hhc-logo-area">
