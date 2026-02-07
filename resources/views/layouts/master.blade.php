@@ -183,7 +183,6 @@
                                                             <a class="dropdown-item  {{ request()->routeIs('public.packages') ? 'active' : '' }}"
                                                                 href="{{ route('public.packages') }}">Broucher</a>
                                                         </li>
-                                                        @endforeach
                                                     </ul>
                                                 </li>
                                                 <li class="nav-item">
