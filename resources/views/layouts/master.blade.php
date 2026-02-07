@@ -105,7 +105,7 @@
                                                         class="hdrbtn menu-item menu-item-type-custom menu-item-object-custom ">
                                                         <a href="tel:+918089111286"><i
                                                                 class="hhc-xcare-icon hhc-xcare-icon-phone-call"></i>
-                                                             +91 8089 111 286</a>
+                                                            +91 8089 111 286</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -125,8 +125,7 @@
                                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                                         aria-labelledby="offcanvasExampleLabel">
                                         <div class="offcanvas-header">
-                                            <a class="nav-link  text-dark btn"
-                                                href="tel:+918089111286">
+                                            <a class="nav-link  text-dark btn" href="tel:+918089111286">
                                                 <i class="bi bi-telephone"></i> +91 8089 111 286
                                             </a>
                                             <button type="button" class="btn-close text-reset"
@@ -140,7 +139,7 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link  text-dark {{ request()->routeIs('public.about') ? 'active' : '' }}"
-                                                        href="{{ route('public.about') }}">About</a>
+                                                        href="{{ route('public.about') }}">About Us</a>
                                                 </li>
                                                 <li class="nav-item dropdown">
                                                     <a class="nav-link  text-dark dropdown-toggle" href="#"
@@ -149,6 +148,10 @@
                                                         Services
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                                        <li>
+                                                            <a class="dropdown-item  {{ request()->routeIs('public.packages') ? 'active' : '' }}"
+                                                                href="{{ route('public.packages') }}">Packages</a>
+                                                        </li>
                                                         @foreach (\App\Models\Service::where('status', '1')->orderBy('display_order')->get() ?? [] as $serviceNav)
                                                             <li>
                                                                 <a class="dropdown-item"
@@ -163,11 +166,29 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link  text-dark {{ request()->routeIs('public.packages') ? 'active' : '' }}"
-                                                        href="{{ route('public.packages') }}">Packages</a>
+                                                        href="{{ route('public.packages') }}">Career</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link  text-dark dropdown-toggle" href="#"
+                                                        id="servicesDropdown" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Corporates
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                                        <li>
+                                                            <a class="dropdown-item  {{ request()->routeIs('public.packages') ? 'active' : '' }}"
+                                                                href="{{ route('public.packages') }}">Investors</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item  {{ request()->routeIs('public.packages') ? 'active' : '' }}"
+                                                                href="{{ route('public.packages') }}">Broucher</a>
+                                                        </li>
+                                                        @endforeach
+                                                    </ul>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link  text-dark {{ request()->routeIs('public.blogs') ? 'active' : '' }}"
-                                                        href="{{ route('public.blogs') }}">Blog</a>
+                                                        href="{{ route('public.blogs') }}">News & Events</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link  text-dark {{ request()->routeIs('public.contact') ? 'active' : '' }}"
@@ -204,7 +225,7 @@
                                             </div>
                                             <div class="col-xl-8 col-sm-12 hhc-footer-right">
                                                 <h2 class="text-light">
-                                                   Hayath Mother and Child Care LLP
+                                                    Hayath Mother and Child Care LLP
                                                 </h2>
                                                 <span class="fs-5 fw-bold text-light">
                                                 </span>
@@ -227,7 +248,8 @@
                                                         <li class="hhc-social-li hhc-social-facebook "><a
                                                                 title="Facebook" href="https://www.facebook.com"
                                                                 target="_blank"><span>
-                                                                    <i class="bi bi-facebook text-light"></i></span></a>
+                                                                    <i
+                                                                        class="bi bi-facebook text-light"></i></span></a>
                                                         </li>
                                                         <li class="hhc-social-li hhc-social-linkedin ">
                                                             <a title="LinkedIn" href="#."
@@ -255,15 +277,18 @@
                                                     <ul id="menu-useful-link" class="menu">
                                                         <li
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-572">
-                                                            <a  class="text-light" href="{{ route('public.services') }}">Services</a>
+                                                            <a class="text-light"
+                                                                href="{{ route('public.services') }}">Services</a>
                                                         </li>
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570">
-                                                            <a  class="text-light" href="{{ route('public.packages') }}">Packages</a>
+                                                            <a class="text-light"
+                                                                href="{{ route('public.packages') }}">Packages</a>
                                                         </li>
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570">
-                                                            <a  class="text-light" href="{{ route('public.doctors') }}">Doctors</a>
+                                                            <a class="text-light"
+                                                                href="{{ route('public.doctors') }}">Doctors</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -276,10 +301,12 @@
                                                     <div class="hhc-timelist-ele-wrapper ">
                                                         <div class="hhc-timelist-wrapper">
                                                             <ul class="hhc-timelist-list">
-                                                                <li><span class="hhc-timelist-li-title text-light">Mon - Sun:
+                                                                <li><span class="hhc-timelist-li-title text-light">Mon
+                                                                        - Sun:
                                                                         8.00am -
                                                                         9.00pm</span></li>
-                                                                <li><span class="hhc-timelist-li-title text-light">24 hrs
+                                                                <li><span class="hhc-timelist-li-title text-light">24
+                                                                        hrs
                                                                         Emergency
                                                                         services
                                                                         available</span></li>
@@ -294,7 +321,8 @@
                                                 class="widget pbm_addons_contact_widget">
                                                 <h2 class="widget-title text-dark fw-bold">Our address</h2>
                                                 <div class="hhc-contact-widget-lines">
-                                                    <div class="hhc-contact-widget-line hhc-contact-widget-address text-light">
+                                                    <div
+                                                        class="hhc-contact-widget-line hhc-contact-widget-address text-light">
                                                         Hayath Mother & Child Care LLP<br>
                                                         Tirur - Kuttippuram Rd, Kavumopuram, Kuttippuram, Kerala 679571.
                                                     </div>
@@ -380,30 +408,30 @@
             });
         </script>
 
-         <!-- Toastr JS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+        <!-- Toastr JS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script type="text/javascript">
-        toastr.options = {
-            "closeButton": true,
-            "progressBar": true,
-            "preventDuplicates": false,
-            "positionClass": "toast-top-right", // Toast position
-            "timeOut": "5000", // Timeout duration
-            "extendedTimeOut": "5000",
-        };
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script type="text/javascript">
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "preventDuplicates": false,
+                "positionClass": "toast-top-right", // Toast position
+                "timeOut": "5000", // Timeout duration
+                "extendedTimeOut": "5000",
+            };
 
-        @if (session('success_msg'))
-            toastr.success("{{ session('success_msg') }}", "Success");
-        @elseif (session('failed_msg'))
-            toastr.error("{{ session('failed_msg') }}", "Error");
-        @elseif (session('info'))
-            toastr.info("{{ session('info') }}", "Info");
-        @elseif (session('warning'))
-            toastr.warning("{{ session('warning') }}", "Warning");
-        @endif
-    </script>
+            @if (session('success_msg'))
+                toastr.success("{{ session('success_msg') }}", "Success");
+            @elseif (session('failed_msg'))
+                toastr.error("{{ session('failed_msg') }}", "Error");
+            @elseif (session('info'))
+                toastr.info("{{ session('info') }}", "Info");
+            @elseif (session('warning'))
+                toastr.warning("{{ session('warning') }}", "Warning");
+            @endif
+        </script>
 
 
 
