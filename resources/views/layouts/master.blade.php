@@ -76,6 +76,11 @@
                                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ">
                                                         <a href="{{ route('public.services') }}">Services</a>
                                                         <ul class="sub-menu">
+
+                                                            <li id="menu-item-6710"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-hhc-service">
+                                                                <a href="{{ route('public.packages') }}">Packages</a>
+                                                            </li>
                                                             @foreach (\App\Models\Service::where('status', '1')->orderBy('display_order')->get() ?? [] as $serviceNav)
                                                                 <li id="menu-item-679"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-hhc-service">
@@ -85,17 +90,37 @@
                                                             @endforeach
                                                         </ul>
                                                     </li>
+
+
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page ">
                                                         <a href="{{ route('public.doctors') }}">Doctors</a>
                                                     </li>
                                                     <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                                        <a href="{{ route('public.packages') }}">Packages</a>
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ">
+                                                        <a href="{{ route('public.services') }}">Corporates</a>
+                                                        <ul class="sub-menu">
+
+                                                            <li id="menu-item-670"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-hhc-service">
+                                                                <a href="{{ route('public.packages') }}">Investors</a>
+                                                            </li>
+                                                            <li id="menu-item-6710"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-hhc-service">
+                                                                <a href="{{ route('public.packages') }}">Brouchers</a>
+                                                            </li>
+
+
+                                                        </ul>
                                                     </li>
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                                        <a href="{{ route('public.blogs') }}">Blog</a>
+                                                        <a href="{{ route('public.packages') }}">Career</a>
+                                                    </li>
+
+                                                    <li
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                                        <a href="{{ route('public.blogs') }}">News & Events</a>
                                                     </li>
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page">
